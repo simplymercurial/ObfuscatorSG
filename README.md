@@ -50,4 +50,7 @@ Suggestions:
 
 Reporting a problem:
 --------------------
-- All reports must contain a *minimal*, completely functional, unobfuscated example (with any necessary includes) that reproduces the problem when obfuscated.  The unobfuscated example must successfully run, without any changes or warnings/errors (so please run au3check with all switches before submitting).  We are, after all, talking about an obfuscator so I'm not likely to spend any time trying to guess where you might be encountering a problem.  Make it easy on me and I'll be happy to help.
+All reports must contain:
+- A *minimal*, completely functional, unobfuscated example (with any necessary includes) that reproduces the problem when obfuscated.  The unobfuscated example must successfully run, without any changes or warnings/errors (so please run au3check with all switches before submitting).  We are, after all, talking about an obfuscator so I'm not likely to spend any time trying to guess where you might be encountering a problem.
+- Whether, and which, "anti-" options you selected.
+- The version of AutoIt you're using.
