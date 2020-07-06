@@ -46,7 +46,7 @@ Potential problems:
 
 Suggestions:
 ------------
-- I'm all ears.
+- I'm all ears.  Open an issue and select "Feature request."
 
 
 Reporting a problem:
