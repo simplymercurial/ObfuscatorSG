@@ -46,7 +46,7 @@ Potential problems:
 
 Suggestions:
 ------------
-- I'm all ears if your suggestion is well thought-out and expressed.
+- I'm all ears.
 
 
 Reporting a problem:
