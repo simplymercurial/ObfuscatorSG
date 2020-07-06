@@ -50,4 +50,4 @@ Suggestions:
 
 Reporting a problem:
 --------------------
-- Any reports must contain a *minimally* functional, unobfuscated example (complete with necessary includes) that reproduces the problem when obfuscated.  The example must successfully run, without any changes or warnings/errors (so please run au3check with all switches before submitting).  We are, after all, talking about an obfuscator so I'm not likely to spend any time trying to guess where you might be encountering a problem.  Make it easy on me and I'll be happy to help.
+- All reports must contain a *minimal*, completely functional, unobfuscated example (with any necessary includes) that reproduces the problem when obfuscated.  The unobfuscated example must successfully run, without any changes or warnings/errors (so please run au3check with all switches before submitting).  We are, after all, talking about an obfuscator so I'm not likely to spend any time trying to guess where you might be encountering a problem.  Make it easy on me and I'll be happy to help.
