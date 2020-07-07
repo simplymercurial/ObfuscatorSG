@@ -3,7 +3,8 @@ An AutoIt obfuscator, written in AutoIt
 
 Big Rule #1: Anything that can be done can be undone (sometimes trivially).
 
-Big Rule #2: I don't guarantee this will work with every script.  Particularly, but not limited to, bad coding practices.
+
+Note: I don't guarantee this will work with every script.  Particularly, but not limited to, bad coding practices.
 
 
 Requirements:
