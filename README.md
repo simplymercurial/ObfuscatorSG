@@ -1,8 +1,6 @@
 # ObfuscatorSG
 An AutoIt obfuscator, written in AutoIt
 
-This is beerware.  If you find it useful, kick a few bucks my way.  The application displays a BTC address where donations may be sent.
-
 Big Rule #1: Anything that can be done can be undone (sometimes trivially).
 
 Big Rule #2: I don't guarantee this will work with every script.  Particularly, but not limited to, bad coding practices.
