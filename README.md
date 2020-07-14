@@ -60,7 +60,7 @@ All non-trivial bug reports must contain:
 
 Notable changes:
 ----------------
-- 1.0.0.89: After obfuscation, all functions will be grouped together and sorted by their newly-randomized names
+- 1.0.0.89: After obfuscation, all functions will be grouped together and sorted by their newly-randomized names.
 - 1.0.0.87: Ensure certain functions commonly associated with strings pick-up a shorter, but still randomized, enumeration to mitigate changes in 1.0.0.82.
 - 1.0.0.82: In a third round of string obfuscation, a subset of the bit math integers will be converted into random mathematical formulas the same way other, common integers are.  An additional subset is further converted into *more* bit-math operations.
 - 1.0.0.68: Added post-obfuscation line length check and notification of which line(s), if any, exceed 4095 characters (AutoIt limitation).
