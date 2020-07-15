@@ -23,7 +23,7 @@ Goal:
 -----
 All software is subject to analysis, particularly interpreted languages like AutoIt.  Since there are a variety of utilities that will extract your script, as-is, from the 'compiled' executable, the goal is to make analysis of the script a hassle.  No solution will stop those with skill, determination, and time on their hands.  But we can at least attempt to raise the bar in terms of who fits that bill.
 
-Several commercial (paid) solutions, with regard to AutoIt, lean heavily on adding junk code, formulaically encoding characters, etc.  Some of their methods are clever.  The problem is that it's still formulaic, and once the method is written it isn't changed.  This has resulted in several utilitiess which have little difficulty picking-apart large portions of a script.  Now, while the methods I've chosen to pursue are not ground-breaking, complicated, or even slightly clever...they are at least different in some respects.  Rather than trying to be fancy, I've focused on making analyzing a script a pain in the butt.  After all, that's really the best we can hope to do (see Big Rule #1).  To wit:
+Several commercial (paid) solutions lean heavily on adding junk code, formulaically encoding characters, etc.  Some of their methods are clever.  The problem is that it's still formulaic, and once the method is written it isn't changed.  This has resulted in several utilitiess which have little difficulty picking-apart large portions of a script.  Now, while the methods I've chosen to pursue are not ground-breaking, complicated, or even slightly clever...they are at least different in some respects.  Rather than trying to be fancy, I've focused on making analyzing a script a pain in the butt.  After all, that's really the best we can hope to do (see Big Rule #1).  To wit:
 
 
 What it does:
@@ -42,7 +42,7 @@ What it does:
 
 Potential problems:
 -------------------
-- AutoIt has a 4095 character limit per line.  Because of the method used to encode strings, any line containing strings is going to end-up much larger than it was previously.  If your lines containing strings consist of fewer than, say, ~300 characters...you're probably okay.  If your obfuscated script is barely exceeding the limit, you can try running the obfuscator again and hope some of the native functions/variables pick-up a shorter enumeration.  However, the correct solution is to rewrite that portion of code.
+- AutoIt has a 4095 character limit per line.  Because of the method used to encode strings, any line containing strings is going to end-up much larger than it was previously.  If your lines containing strings consist of fewer than, say, ~300 characters...you're probably okay.  If your obfuscated script is barely exceeding the limit, you can try running the obfuscator again and hope some of the functions/variables pick-up a shorter enumeration.  However, the correct solution is to rewrite that portion of code.
 
 
 Suggestions:
