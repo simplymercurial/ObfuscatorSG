@@ -42,7 +42,7 @@ What it does:
 
 Potential problems:
 -------------------
-- AutoIt has a 4095 character limit per line.  Because of the method used to encode strings, any line containing strings is going to end-up much larger than it was previously.  If your lines containing strings consist of fewer than, say, ~300 characters...you're probably okay.  If your obfuscated script is barely exceeding the limit, you can try running the obfuscator again and hope some of the functions/variables pick-up a shorter enumeration.  However, the correct solution is to rewrite that portion of code.
+- AutoIt has a 4095 character limit per line.  Because of the method used to encode strings, any line containing strings is going to end-up much larger than it was previously.  If your lines containing strings consist of fewer than, say, ~300 characters...you're probably okay.  If your obfuscated script is barely exceeding the limit, you can try running the obfuscator again and hope some of the functions/variables pick-up shorter enumerations.  However, the correct solution is to rewrite that portion of code.
 
 
 Suggestions:
