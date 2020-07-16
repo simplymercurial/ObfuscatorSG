@@ -36,7 +36,7 @@ What it does:
 - Removes spaces from operators/delimiters to reduce character usage per line (see "Potential problems" below).
 - Anti-debug & anti-VM:  Nothing clever here.  The anti-debug option will add a compilation check + a windows DLL call to determine if a debugger is present. If you select that option, you will have to compile your obfuscated script in order to run it.  The anti-VM option, though I don't recommend using it, checks for common processes associated with virtual environments.  Most solutions which add these capabilities tend to "Exit" when found.  Well, someone analyzing your script might immediately look for that keyword to zero-in on the checks.  ObfuscatorSG does something different and it's entirely harmless.  We just don't want to make things too easy for people to find.  Also, all functionality associated with these checks is obfuscated in the same manner as the rest of the script, including the DLL calls.
 - Some red herrings are thrown-in for good measure.
-- All functions, including AutoIt's included UDFs, will be grouped together and sorted by their newly-randomized names.
+- All functions, including AutoIt's included UDFs, will be grouped together and sorted by their newly-randomized names (now optional).
 - Last, but not least, ObfuscatorSG will check the length of each line of obfuscated code to see if any line exceeds 4095 characters (an inherent limitation for AutoIt source code. See below).  The line(s) which exceed this count, if any, will be displayed.  The reported line numbers refer to the exact line of the *obfuscated* script.
 
 
