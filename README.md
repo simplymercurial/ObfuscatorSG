@@ -60,7 +60,7 @@ All non-trivial bug reports must contain:
 
 Notable changes:
 ----------------
-- 1.0.0.93: Third round of string obfuscation (1.0.0.82) is now optional.  Function sorting (1.0.0.89) is now optional for troubleshooting purposes.
+- 1.0.0.93: Third round of string obfuscation is now optional.  Function sorting is now optional (for troubleshooting).
 - 1.0.0.89: After obfuscation, all functions will be grouped together and sorted by their newly-randomized names
 - 1.0.0.87: Ensure certain functions commonly associated with strings pick-up a shorter, but still randomized, enumeration to mitigate changes in 1.0.0.82.
 - 1.0.0.82: In a third round of string obfuscation, a subset of the bit math integers will be converted into random mathematical formulas the same way other, common integers are.  An additional subset is further converted into *more* bit-math operations.
