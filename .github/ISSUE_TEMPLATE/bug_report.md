@@ -7,12 +7,17 @@ assignees: ''
 
 ---
 
-**To Reproduce**
-Provide a minimal, completely functional (with necessary includes), unobfuscated example that reproduces the problem.
+**Description and sample code**
+
+
+**ObfuscatorSG version**
+Version: 
 
 **ObfuscatorSG options**
 Anti-VM:  y/n
 Anti-debug:  y/n
+Sort functions:  y/n
+Extra string encoding:  y/n
 
 **AutoIt version**
 Version:  
