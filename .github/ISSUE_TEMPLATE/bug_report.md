@@ -7,8 +7,11 @@ assignees: ''
 
 ---
 
-**Description and code snippet**
+**Description and sample code**
 
+
+**ObfuscatorSG version**
+Version: 
 
 **ObfuscatorSG options**
 Anti-VM:  y/n
