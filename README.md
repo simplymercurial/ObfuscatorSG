@@ -31,7 +31,7 @@ What it does:
 - Like other solutions, ObfuscatorSG will rename functions (and their respective calls) and variables.  This is done with '1's and 'l's of varying length.  Additionally, the 1/l enumerations are shuffled with each run.  Since they have a similar naming convention, and are of varying length, anyone trying to do simplistic search & replace operations will wreck the script unless careful (see Big Rule #1).
 - Nearly all native functions (macros, 'FileWrite', 'MsgBox', 'UBound', etc.) will be assigned to variables (same as above) and any calls to those functions will be replaced with those assignations.  Again, this won't stop someone with enough determination and skill, but will require more work on their part and prevents anyone from seeing exactly what your script is doing at first, or even second, glance.
 - String encoding:  Like several other solutions, ObfuscatorSG will encode your strings into Ascii numercial representations (32-255).  However, this is taken a couple of steps further.  The resulting Asc numercial representations are then converted to a random selection of 'Bit' operations (BitAnd, BitXOR, etc.) and the corresponding integers which result in the original Asc code. The calls themselves are also obfuscated per above.  This applies to each and every use of a particular character, even on the same line.  If you have a string with seven 't's, *each* 't' will likely use a different Bit operation and also have differing integer representations.  If someone's adept with Regular Expressions, it's conceivable they can single-out the formulas and perhaps even solve for them, but they'll first have to figure-out *which* bit operation is used for each and every character.  Furthermore, a subset of the bit integers are further converted into mathematical formulas (see below), while an additional subset is further converted into more bit-math operations (optional).  The wide variation of lengths/structures should make RegEx analysis/replacement a nightmare.
-- Extending on the string encoding method, I've chosen to use a mathematical formula tactic for common integers (+=1, -3, =1, =0, >1, etc.), and also for any array subscripts your script might contain.  Each number is changed, randomly, into one of 50 mathematical formulas for each integer (the result of some linear equations I wrote).
+- Extending on the string encoding method, I've chosen to use a mathematical formula tactic for common integers (+=1, -3, =1, =0, >1, etc.), and also for any array subscripts your script might contain.  Each number is changed, randomly, into one of 50 mathematical formulas for each integer (the result of some linear equations I wrote).  Optionally, portions of these formulas will be further converted into additional formulas.
 - Removes spaces from operators/delimiters to reduce character usage per line (see "Potential problems" below).
 - Anti-debug & anti-VM:  Nothing clever here.  The anti-debug option will add a compilation check + a windows DLL call to determine if a debugger is present. If you select that option, you will have to compile your obfuscated script in order to run it.  The anti-VM option, though I don't recommend using it, checks for common processes associated with virtual environments.  Most solutions which add these capabilities cause a program to "Exit" when found.  Well, someone analyzing your script might immediately look for that keyword to zero-in on the checks.  ObfuscatorSG does something different and it's entirely harmless.  We just don't want to make things too easy for people to find.  Also, all functionality associated with these checks is obfuscated in the same manner as the rest of the script.
 - Some red herrings are thrown-in for good measure.
@@ -51,14 +51,12 @@ Suggestions:
 
 Reporting a problem:
 --------------------
-All non-trivial bug reports must contain:
-- A *minimal*, completely functional, unobfuscated example (with any necessary includes) that reproduces the problem when obfuscated.  The unobfuscated example must successfully run without any changes or warnings/errors (so please run au3check with all switches before submitting).  We are, after all, talking about an obfuscator so I'm not likely to spend any time trying to guess where you might be encountering a problem.
-- Which options were selected (Anti-debug, etc.)
-- The version of AutoIt you're using.
+All non-trivial bug reports should contain a *minimal* unobfuscated example (with any necessary includes) that reproduces the problem when obfuscated.
 
 
 Notable changes:
 ----------------
+- 1.0.0.102: Common integer replacement is further obfuscated by converting certain portions of the mathematical formulas into additional formulas (optional).
 - 1.0.0.93: Third round of string obfuscation is now optional.  Function sorting is now optional (for troubleshooting).
 - 1.0.0.89: After obfuscation, all functions will be grouped together and sorted by their newly-randomized names
 - 1.0.0.87: Ensure certain functions commonly associated with strings pick-up a shorter, but still randomized, enumeration to mitigate changes in 1.0.0.82.
