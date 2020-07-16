@@ -13,7 +13,7 @@ Requirements:
 
 Instructions:
 -------------
-- Point ObfuscatorSG to your script.  The output will be automatically named "(script)_obfuscated.au3".
+- Point ObfuscatorSG to your script.  The output will be automatically named "(file)_obfuscated.au3".
 - If you opt for the anti-debug feature, you *must* compile the obfuscated script in order to run it.
 - When compiling, change whatever compiling/resource options you like, but leave Au3Check, Au3Stripper, and Tidy disabled.
 - I do not recommend the Anti-VM option, even though it is provided.  In recent times, it is far more common for people to use sandbox/virtual environments for a variety of reasons.
