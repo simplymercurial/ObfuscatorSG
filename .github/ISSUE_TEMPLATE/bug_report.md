@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**To Reproduce**
-Provide a minimal, completely functional (with necessary includes), unobfuscated example that reproduces the problem.
+**Description and code snippet**
+
 
 **ObfuscatorSG options**
 Anti-VM:  y/n
