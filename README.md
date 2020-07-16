@@ -8,7 +8,6 @@ Requirements:
 -------------
 - You must be using the latest release (or beta) of AutoIt.
 - You are *strongly* advised to run Au3Check on your script (with all switches) and fix any reported problems prior to obfuscating.
-- Note: I don't guarantee this will work with every script.  Particularly, but not limited to, bad coding practices.
 
 
 Instructions:
